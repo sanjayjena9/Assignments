@@ -24,6 +24,19 @@ console.log(`Person's email address: ${email}`);
 let locationCordinates:string = "37.7749, -122.4194";
 console.log(`Coordinates of a location (latitude, longitude): ${locationCordinates}`);
 
+//Using Map
+let locationCordinatesExample:Map<string , number> = new Map();
+locationCordinatesExample.set("latitude",37.7749);
+locationCordinatesExample.set("longitude",-122.4194);
+console.log('Coordinates of a location (latitude, longitude):',locationCordinatesExample);
+
+//Using object
+let locationCordinatesExampleOne = {
+    latitude : 37.7749,
+    longitude : -122.4194
+}
+console.log("Coordinates of a location (latitude, longitude): "+ locationCordinatesExampleOne.latitude , locationCordinatesExampleOne.longitude);
+
 //7.Person's marital status: true or false
 let isMaritalStatus:boolean = false;
 console.log(`Person's marital status: ${isMaritalStatus}`);
