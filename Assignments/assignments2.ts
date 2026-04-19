@@ -67,7 +67,7 @@ function isCustomerEligibleForLoan(customerName: string, creditScore: number, in
                 }
                 else
                 {
-                     return `${customerName} : Loan is denied. Employee is unemployed.`;
+                     return `${customerName} : Loan is denied. You are unemployed.`;
                 }
             }
         }
