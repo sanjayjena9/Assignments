@@ -34,7 +34,7 @@ console.log('Coordinates of a location (latitude, longitude):',locationCordinate
 let locationCordinatesExampleOne = {
     latitude : 37.7749,
     longitude : -122.4194
-}
+};
 console.log("Coordinates of a location (latitude, longitude): "+ locationCordinatesExampleOne.latitude , locationCordinatesExampleOne.longitude);
 
 //7.Person's marital status: true or false

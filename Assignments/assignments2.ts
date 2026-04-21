@@ -27,49 +27,41 @@ debtToIncomeRatio = 35.0; */
 
 //Solution
 
-let customerName:string = "John Doe";
-let creditScore:number = 720;
-let income:number = 55000;
-let isEmployed:boolean = true;
-let debtToIncomeRatio:number = 35;
+let customerName: string = "John Doe";
+let creditScore: number = 720;
+let income: number = 55000;
+let isEmployed: boolean = true;
+let debtToIncomeRatio: number = 35;
 
-let isEligibleForLoan:string =  isCustomerEligibleForLoan(customerName, creditScore, income, isEmployed, debtToIncomeRatio);
+let isEligibleForLoan: string = isCustomerEligibleForLoan(customerName, creditScore, income, isEmployed, debtToIncomeRatio);
 console.log(`Customer is : ${isEligibleForLoan}`);
 
 function isCustomerEligibleForLoan(customerName: string, creditScore: number, income: number, isEmployed: boolean, debtToIncomeRatio: number): string {
-        //Credit score check
-        if (creditScore > 750)
-        {
-            return `${customerName} : Loan is approved. You have a good credit score.`;
+    //Credit score check
+    if (creditScore > 750) {
+        return `${customerName} : Loan is approved. You have a good credit score.`;
+    }
+    else if (creditScore < 650) {
+        return `${customerName} : Loan is denied. You have not a good credit score.`;
+    }
+    else //If the credit score is between 650 and 750, additional checks are performed.
+    {
+        if (income < 50000) {
+            return `${customerName} : Loan is denied. Income must be at least $50,000 for the loan to be considered.`;
         }
-        else if(creditScore < 650)
-        {
-            return `${customerName} : Loan is denied. You have not a good credit score.`;
-        }
-        else //If the credit score is between 650 and 750, additional checks are performed.
-        {
-            if(income < 50000)
-            {
-                 return `${customerName} : Loan is denied. Income must be at least $50,000 for the loan to be considered.`;
-            }
-            else if(income >= 50000)
-            {
-                if(isEmployed)
-                {
-                    if(debtToIncomeRatio<40)
-                    {
-                        return `${customerName} : Loan is approved.`;
-                    }
-                    else
-                    {
-                        return `${customerName} : Loan is denied.`;
-                    }
+        else if (income >= 50000) {
+            if (isEmployed) {
+                if (debtToIncomeRatio < 40) {
+                    return `${customerName} : Loan is approved.`;
                 }
-                else
-                {
-                     return `${customerName} : Loan is denied. You are unemployed.`;
+                else {
+                    return `${customerName} : Loan is denied.`;
                 }
             }
+            else {
+                return `${customerName} : Loan is denied. You are unemployed.`;
+            }
         }
-        return `${customerName} : Loan decision could not be determined.`;
+    }
+    return `${customerName} : Loan decision could not be determined.`;
 }
