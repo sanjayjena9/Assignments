@@ -100,3 +100,67 @@ switch (env) {
     default:
         console.log("Please provide the correct environment");
 }
+
+//Practice some examples
+/*
+Beginner Level
+Even or Odd
+    Write a function that takes a number and returns "Even" if the number is even, otherwise "Odd".
+Positive, Negative, or Zero
+    Given a number, determine whether it is positive, negative, or zero.
+Voting Eligibility
+    Create a function that takes age as input and returns whether a person is eligible to vote (age ≥ 18).
+Largest of Two Numbers
+    Write a function that compares two numbers and returns the larger one.*/
+
+//Write a function that takes a number and returns "Even" if the number is even, otherwise "Odd".
+ 
+function checkEvenOrOdd(num: number): string {
+    if (num % 2 === 0) {
+        return "Even";
+    } else {
+        return "Odd";
+    }
+}
+
+let numberToCheck: number = 10;
+console.log(`The number ${numberToCheck} is ${checkEvenOrOdd(numberToCheck)}.`);  
+
+//Write a function - Given a number, determine whether it is positive, negative, or zero.
+function checkNumberType(num: number): string {
+    if (num > 0) {
+        return "Positive";
+    } else if (num < 0) {
+        return "Negative";
+    } else {
+        return "Zero";
+    }
+}
+
+let numberToCheck2: number = -5;
+console.log(`The number ${numberToCheck2} is ${checkNumberType(numberToCheck2)}.`);  
+
+//Write a function - Create a function that takes age as input and returns whether a person is eligible to vote (age ≥ 18).
+function checkVotingEligibility(age: number): string {
+    if (age >= 18) {
+        return "Eligible to vote";
+    } else {
+        return "Not eligible to vote";
+    }
+}
+
+let ageToCheck: number = 20;
+console.log(`The person with age ${ageToCheck} is ${checkVotingEligibility(ageToCheck)}.`);  
+
+//Write a function - Write a function that compares two numbers and returns the larger one. 
+function findLargerNumber(num1: number, num2: number): number {
+    if (num1 > num2) {
+        return num1;
+    } else {
+        return num2;
+    }
+}
+let firstNumber: number = 15;
+let secondNumber: number = 25;
+console.log(`The larger number between ${firstNumber} and ${secondNumber} is ${findLargerNumber(firstNumber, secondNumber)}.`);
+

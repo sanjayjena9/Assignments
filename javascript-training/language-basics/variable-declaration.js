@@ -48,3 +48,60 @@ var a = "Bharath"; //Redeclaration is possible when it comes to var
 // console.log(x);
 // console.log(y);
 console.log(z);
+
+//More examples of Var , let & const
+//var keyword
+console.log("var KeyWord - Example");
+var n = 5;
+console.log(n);
+
+//re-assign = Possible
+n = 10;
+console.log(n);
+
+//re-declare = Possible
+var n = "Sanjay";
+console.log(n);
+
+//let keyword
+console.log("let KeyWord - Example");
+
+let p = 10;
+console.log(p);
+
+//re-assign = Possible
+p = 20;
+console.log(p);
+
+//re-declare = Not Possible
+//let p ="Sanjay";
+//console.log(p); //SyntaxError: Identifier 'p' has already been declared
+
+//const keyword
+console.log("const KeyWord - Example");
+
+const c1 = "3.143"; 
+console.log(c); 
+
+//re-assign = Not Possible
+//c = "2.221"; ////SyntaxError: Identifier 'c' has already been declared
+//console.log(c);
+
+//re-declare = Not Possible
+//const c = "SANJAY"; //SyntaxError: Identifier 'c' has already been declared
+//console.log(c);
+
+console.log("Re-Assignment & Re-declare is not possible in case of const!")
+console.log("Reassignment and re-declare is possible in case of var!")
+console.log("Reassignment is possible but re-declare is not possible in case of let!")
+console.log("var is not block scoped!")
+console.log("let & const both are blocked scope!")
+
+let admin;
+let name;
+name = "John";
+admin = name;
+console.log(admin);
+
+
+

@@ -2,7 +2,9 @@
 
 //Data types in JavaScript are divided into two different categories. 
 //1. Primitive Data Types (immutable data types)
+        //Number , String, Boolean, Undefined , Null. Symbol , BigInt
 //2. Non-Primitive Data Types (mutable data types)
+        // Object , Map, Array, Function
 
 //immutable 
 let a = 10;//storing number
@@ -136,6 +138,7 @@ empIds.add(122);
 empIds.add(123);
 empIds.add(123);
 empIds.add(124);
+empIds.add("Sanjay");
 
 console.log(empIds);
 
@@ -173,3 +176,4 @@ console.log(currentDate.getMinutes());
 
 //get current seconds
 console.log(currentDate.getSeconds());
+
