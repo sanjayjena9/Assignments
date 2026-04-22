@@ -27,7 +27,7 @@ bankTransaction.set(1,50000);
 bankTransaction.set(2,-2000);
 bankTransaction.set(3,3000);
 bankTransaction.set(4,-15000);
-bankTransaction.set(5,-200);
+bankTransaction.set(5,-20000);
 bankTransaction.set(6,-300);
 bankTransaction.set(7,4000);
 bankTransaction.set(8,-3000);
@@ -94,4 +94,4 @@ console.log(`Total amount remaining at the end in Bank Account is ${totalAmountI
 /*If any transaction limit exceeds +/- 10000 then print the message “Suspicious credit/ debit
 Transaction with Amount” and also print total number of suspicious transactions.*/
 console.log(`Total Suspicious credit Transaction is ${countTotSuspiciousCredit} And Total Suspicious credit amount is ${totalSuspiciousCreditAmt}`);
-console.log(`Total Suspicious credit Transaction is ${countTotSuspiciousdebit} And Total Suspicious credit amount is ${totalSuspiciousDebitAmt}`);
+console.log(`Total Suspicious debit Transaction is ${countTotSuspiciousdebit} And Total Suspicious debit amount is ${totalSuspiciousDebitAmt}`);
