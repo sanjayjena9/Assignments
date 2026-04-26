@@ -72,7 +72,8 @@ console.log(`Extracted username: ${username}`); // Output: Admin
 let password: string = originalString.substring(31, 39);
 console.log(`Extracted password: ${password}`); // Output: admin123
 
-//12. Method to extract the text from the dynamic string  => Split and extract particular parts. => string.split(delimiter)
+//12. Method to extract the text from the dynamic string  => Split 
+// and extract particular parts. => string.split(delimiter)
 console.log("12. Extract the text from the dynamic string");
 let splitString: string[] = originalString.split(" ");
 console.log(splitString); // Output: [ 'Username', ':', 'Admin', '|', 'Password', ':', 'admin123' ]

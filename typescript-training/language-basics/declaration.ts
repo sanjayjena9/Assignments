@@ -6,9 +6,9 @@ let price: number = 299.99;
 
 function add (a:number, b:number) : number
 {
-    let result = a +b;
+    let result:number = a +b;
     return result;
 }
 
-let finalValue = add(5,2);
+let finalValue:number = add(5,2);
 console.log (finalValue);
