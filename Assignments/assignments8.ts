@@ -21,7 +21,7 @@ function countWordsInParagrah(paragraph:string):number{
     console.log(splitParagraph);
     for(const word of splitParagraph)
     {
-        if(word === searchWord)
+        if(word === searchWord || "java")
         {
             countWord +=1;
         }
